@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Welcome!
+        </title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-assets>
+                <a-asset-item id="frog" src="./Frog/Frog.gltf"></a-asset-item>
+                <img id="skybox" src="./Country_skybox.jpg">
+            </a-assets>
+
+            <a-cone position="0 1.25 -5" color="#ff0000"></a-cone>
+            <a-box position="0 0 -5" color="#a500b7"></a-box>
+            <a-entity gltf-model="#frog" position="0.25 1 -5"></a-entity>
+            <a-cone position="2 2 -5" color="#aa0000"></a-cone>
+            <a-box position="2 1.25 -5" color="#aa0000"> </a-box>
+            <a-sky src="#skybox"></a-sky>
+            
+        </a-scene>
+    </body>
+</html>
